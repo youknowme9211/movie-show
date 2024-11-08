@@ -12,17 +12,15 @@ const Splash = () => {
       AsyncStorage.getItem("login").then((value) => {
         value != null ? nav.replace("Home") : nav.replace("Login");
       });
-    }, 5000);
+    }, 4000);
   }, []);
 
   return (
     <View style={{ flex: 1, backgroundColor: useColors.primary }}>
       <Image
         style={{ width: "100%", height: "100%", resizeMode: "contain" }}
-        source={{
-          uri:'./movie.jpg',
-        }}
-
+        source={require('./movie.jpg')} 
+      
       />
     </View>
   );
