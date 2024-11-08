@@ -78,7 +78,7 @@ const MyTicket = ({route}) => {
           <View style={{ flexDirection: "row", alignItems: "center", gap: 10 }}>
             <AntDesign name="barcode" size={30} color="black" />
             <Text style={{ fontWeight: "600", color: "black", fontSize: 16 }}>
-             {seatsArray}AYAAN
+             {seatsArray}XUNZAK
             </Text>
           </View>
         </View>
