@@ -9,6 +9,9 @@ import { Wrapper } from "./src/Context/Wrapper";
 import Details from "./src/Screens/Details";
 import Malls from "./src/Screens/Malls";
 import MyTicket from "./src/Screens/MyTicket";
+import LoginScreen from './src/Screens/LoginScreen';
+
+
 
 
 const Stack = createNativeStackNavigator();
@@ -19,14 +22,15 @@ const App = () => {
       <NavigationContainer>
         <Stack.Navigator
           initialRouteName="Splash"
-          screenOptions={{ headerShown: false }}
-        >
+          screenOptions={{ headerShown: false }}>
           <Stack.Screen name="Splash" component={Splash} />
+          <Stack.Screen name="Login" component={LoginScreen} />
           <Stack.Screen name="SelectCity" component={SelectCity} />
           <Stack.Screen name="Home" component={Home} />
           <Stack.Screen name="Details" component={Details} />
           <Stack.Screen name="Malls" component={Malls} />
           <Stack.Screen name="MyTicket" component={MyTicket}/>
+          
         </Stack.Navigator>
       </NavigationContainer>
     </Wrapper>

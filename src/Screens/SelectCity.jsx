@@ -12,7 +12,7 @@ const SelectCity = () => {
   const [isClicked, setisClicked] = useState(true);
 
 
-  const {data,setdata}=useContext(Store)
+  const { data, setdata } = useContext(Store)
 
 
 
@@ -43,7 +43,7 @@ const SelectCity = () => {
                 setisSelected(index);
                 setisClicked(false);
                 setdata(item)
-               
+
               }}
               style={{
                 borderWidth: isSelected == index ? 2 : 1,

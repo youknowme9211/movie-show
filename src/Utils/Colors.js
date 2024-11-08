@@ -1,5 +1,5 @@
 export const useColors={
-    primary:'#D70B17',
+    primary:'#845ec2',
     secondary:'black',
     white:'white',
     grey:'grey'

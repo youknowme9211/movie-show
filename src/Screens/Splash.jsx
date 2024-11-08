@@ -10,9 +10,9 @@ const Splash = () => {
   useEffect(() => {
     setTimeout(() => {
       AsyncStorage.getItem("login").then((value) => {
-        value != null ? nav.replace("Home") : nav.replace("SelectCity");
+        value != null ? nav.replace("Home") : nav.replace("Login");
       });
-    }, 2000);
+    }, 5000);
   }, []);
 
   return (
@@ -20,8 +20,9 @@ const Splash = () => {
       <Image
         style={{ width: "100%", height: "100%", resizeMode: "contain" }}
         source={{
-          uri: "https://mir-s3-cdn-cf.behance.net/projects/404/4fabff156214799.Y3JvcCw5ODEsNzY4LDIxLDA.png",
+          uri:'./movie.jpg',
         }}
+
       />
     </View>
   );
