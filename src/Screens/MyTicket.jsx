@@ -108,7 +108,7 @@ const MyTicket = ({ route }) => {
           </View>
           <View style={{ flex: 0.95, justifyContent: "flex-end", paddingHorizontal: 20 }}>
             <TouchableOpacity onPress={handlePayment} style={{ height: 50, backgroundColor: useColors.primary, borderRadius: 10, justifyContent: "center", alignItems: "center" }}>
-              <Text style={{ color: "white", fontSize: 16, fontWeight: "700" }}>Continue to Home</Text>
+              <Text style={{ color: "white", fontSize: 16, fontWeight: "700" }}>Continue Payment</Text>
             </TouchableOpacity>
           </View>
         </>
