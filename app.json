@@ -1,7 +1,7 @@
 {
   "expo": {
-    "name": "BookMyShow",
-    "slug": "BookMyShow",
+    "name": "CA4-React",
+    "slug": "CA4-React",
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/icon.png",
@@ -21,10 +21,16 @@
       "adaptiveIcon": {
         "foregroundImage": "./assets/adaptive-icon.png",
         "backgroundColor": "#ffffff"
-      }
+      },
+      "package": "com.divyanshu_kushwaha.CA4React"
     },
     "web": {
       "favicon": "./assets/favicon.png"
+    },
+    "extra": {
+      "eas": {
+        "projectId": "42c9f301-fef1-45ac-8656-a539756c400a"
+      }
     }
   }
 }

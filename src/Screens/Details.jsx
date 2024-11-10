@@ -39,7 +39,7 @@ const Details = ({ route }) => {
             }}
             name="chevron-back"
             size={28}
-            color="red"
+            color="#845ec2"
           />
           <Text style={{ color: "black", fontWeight: "600", fontSize: 17 }}>
             {title}
@@ -48,7 +48,7 @@ const Details = ({ route }) => {
 
         {/* 
         ChildBox 2 */}
-        <Feather name="search" size={26} color="red" />
+        <Feather name="search" size={26} color="#845ec2" />
       </View>
 
       <View
@@ -73,12 +73,12 @@ const Details = ({ route }) => {
                 justifyContent: "space-evenly",
                 paddingHorizontal: 10,
                 marginHorizontal: 10,
-                backgroundColor: isSelected == index ? "red" : null,
+                backgroundColor: isSelected == index ? "#845ec2" : null,
               }}
             >
               <Text
                 style={{
-                  color: isSelected == index ? "white" : "red",
+                  color: isSelected == index ? "white" : "#845ec2",
                   fontWeight: "400",
                   fontSize: 14,
                 }}
