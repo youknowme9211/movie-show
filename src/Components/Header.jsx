@@ -31,7 +31,7 @@ const Header = () => {
         onPress={() => {
           AsyncStorage.removeItem("login");
         }}
-        name="ios-search"
+        name="search"
         size={28}
         color={useColors.primary}
       />
