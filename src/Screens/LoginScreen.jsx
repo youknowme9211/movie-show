@@ -3,6 +3,7 @@ import { View, Text, TextInput, TouchableOpacity, StyleSheet } from 'react-nativ
 import { useNavigation } from '@react-navigation/native';
 import { useColors } from '../Utils/Colors';
 import { signIn } from '../api/auth';
+import SelectCity from './SelectCity';
 
 const LoginScreen = () => {
   const [email, setEmail] = useState('');

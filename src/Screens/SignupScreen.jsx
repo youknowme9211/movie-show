@@ -3,7 +3,7 @@ import { View, Text, TextInput, TouchableOpacity, StyleSheet } from 'react-nativ
 import { useColors } from '../Utils/Colors';
 import { signUp } from '../api/auth'; // Import your service file
 import { useNavigation } from '@react-navigation/native'; // Import useNavigation hook
-
+import SelectCity from './SelectCity';
 const SignUpScreen = () => {
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
@@ -17,7 +17,7 @@ const SignUpScreen = () => {
       await signUp(email, password, name);
 
       // After successful signup, navigate to the Login screen
-      navigation.replace('Login'); // Use replace to avoid going back to SignUp
+      navigation.replace('SelectCity'); // Use replace to avoid going back to SignUp
     } catch (error) {
       console.error('Signup failed:', error);
     }

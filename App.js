@@ -12,9 +12,6 @@ import MyTicket from "./src/Screens/MyTicket";
 import LoginScreen from './src/Screens/LoginScreen';
 import SignUpScreen from "./src/Screens/SignupScreen";
 
-
-
-
 const Stack = createNativeStackNavigator();
 
 const App = () => {
