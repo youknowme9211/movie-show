@@ -9,9 +9,10 @@ const Splash = () => {
 
   useEffect(() => {
     setTimeout(() => {
-      AsyncStorage.getItem("login").then((value) => {
-        value != null ? nav.replace("Home") : nav.replace("Login");
-      });
+      // AsyncStorage.getItem("login").then((value) => {
+      //   value != null ? nav.replace("Home") : nav.replace("Signup");
+      // });
+      nav.replace("Signup")
     }, 4000);
   }, []);
 
