@@ -2,18 +2,25 @@ import React, { useState } from 'react';
 import { View, Text, TextInput, TouchableOpacity, StyleSheet } from 'react-native';
 import { useNavigation } from '@react-navigation/native';
 import { useColors } from '../Utils/Colors';
+import { signIn } from '../api/auth';
 
 const LoginScreen = () => {
-  const [username, setUsername] = useState('');
+  const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
   const navigation = useNavigation();
 
-  const handleLogin = () => {
-    
-    if (username && password) {
-      navigation.replace('SelectCity'); 
+  const handleLogin = async () => {
+    if (email && password) {
+      try {
+        const response = await signIn(email, password); // Call the signIn function from authService
+        console.log('Login successful:', response);
+        if(response) navigation.replace('SelectCity'); // Replace to SelectCity screen after login
+      } catch (error) {
+        console.error('Login failed:', error);
+        alert('Login failed! Please check your credentials and try again.');
+      }
     } else {
-      alert("Please enter username and password");
+      alert('Please enter both email and password');
     }
   };
 
@@ -23,9 +30,9 @@ const LoginScreen = () => {
       
       <TextInput
         style={styles.input}
-        placeholder="Username"
-        value={username}
-        onChangeText={setUsername}
+        placeholder="Email"
+        value={email}
+        onChangeText={setEmail}
       />
       <TextInput
         style={styles.input}

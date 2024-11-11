@@ -10,6 +10,7 @@ import Details from "./src/Screens/Details";
 import Malls from "./src/Screens/Malls";
 import MyTicket from "./src/Screens/MyTicket";
 import LoginScreen from './src/Screens/LoginScreen';
+import SignUpScreen from "./src/Screens/SignupScreen";
 
 
 
@@ -24,6 +25,7 @@ const App = () => {
           initialRouteName="Splash"
           screenOptions={{ headerShown: false }}>
           <Stack.Screen name="Splash" component={Splash} />
+          <Stack.Screen name='Signup' component={SignUpScreen}/>
           <Stack.Screen name="Login" component={LoginScreen} />
           <Stack.Screen name="SelectCity" component={SelectCity} />
           <Stack.Screen name="Home" component={Home} />
